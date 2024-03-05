@@ -1,0 +1,54 @@
+body {
+  background-image: url(pattern.jpg);
+  margin: 0;
+}
+
+header {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+article a {
+  color: rgb(148, 16, 148);
+  text-decoration: none;
+}
+header img {
+  height: 70px;
+}
+.list-link a {
+  text-decoration: none;
+}
+.list-link li {
+  margin-right: 20px;
+  display: inline;
+}
+main {
+  background-color: azure;
+  width: 80%;
+  margin: auto;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+main h1 {
+  text-align: center;
+}
+
+article p {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  padding: 5px 0;
+  color: white;
+}
