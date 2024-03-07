@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthController;
 
 
 /*
@@ -18,8 +19,17 @@ use App\Http\Controllers\HomeController;
 // Route::get('/home', function () {
 //     return view('home');
 // });
+
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/form', [HomeController::class, 'form'])->name('form');
-Route::get('',function(){
-
+Route::post('welcome',[AuthController::class, 'welcome'])->name('welcome');
+Route::get('/master',function(){
+    return view('layout.master');
+});
+Route::get('table',function(){
+    return view('table');
+});
+Route::get('data-table',function(){
+    return view('data-table');
 });

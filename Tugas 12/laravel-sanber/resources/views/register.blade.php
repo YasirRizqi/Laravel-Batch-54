@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Belajar Laravel</title>
-  </head>
-  <body>
-    <h1>Buat Account Baru!</h1>
+@extends('layout.master')
+@section('title','Register')
+@section('content')
+
+<h1>Buat Account Baru!</h1>
     <h3>Sign Up Form</h3>
-    <form action="welcome.html" method="get">
-    @csrf
+
+    <form action="{{route('welcome')}}" method="POST">
+      @csrf
       <label for="fname">First Name:</label> <br />
       <input type="text" name="fname" id="fname" /><br />
       <br />
@@ -43,5 +40,17 @@
       <textarea name="bio" id="bio" cols="30" rows="10"></textarea><br />
       <input type="submit" value="SignUp" />
     </form>
+@endsection
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Laravel</title>
+  </head>
+  <body>
+    
   </body>
 </html>
