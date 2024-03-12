@@ -86,8 +86,16 @@
                   <p>Data Table</p>
                 </a>
               </li>
-           
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/cast" class="nav-link">
+              <i class="nav-icon fas  fa-user" ></i>
+              <p>
+                Cast
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
           </li>
           
           
@@ -136,9 +144,7 @@
           @yield('content')
         </div>
         <!-- /.card-body -->
-        <div class="card-footer">
-          Footer
-        </div>
+
         <!-- /.card-footer-->
       </div>
       <!-- /.card -->
